@@ -1,3 +1,59 @@
 {
-  "mcpServers": {}
+  "mcpServers": {
+    "browsermcp": {
+      "command": "npx",
+      "args": [
+        "@browsermcp/mcp@latest"
+      ]
+    },
+    "firecrawl-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "firecrawl-mcp"
+      ],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-3bf0ff5731b84d70a71265f233092913"
+      }
+    },
+    "supabase": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@supabase/mcp-server-supabase"
+      ],
+      "env": {
+        "QUERY_API_KEY": "sb_secret_HRclPhIDpT-ee1egOAJtfA_4ZrdTAg1",
+        "SUPABASE_PROJECT_REF": "ivzvmuqetpkpcsnrhtto",
+        "SUPABASE_DB_PASSWORD": "Bee3aiLu!@!@",
+        "SUPABASE_REGION": "us-east-1",
+        "SUPABASE_ACCESS_TOKEN": "sbp_177ea803f7d0e234784a7d5530036f46d0f91e54",
+        "SUPABASE_SERVICE_ROLE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml2enZtdXFldHBrcGNzbnJodHRvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDk4MjAxMCwiZXhwIjoyMDY2NTU4MDEwfQ.rqdf8BSh2deLUw_XYy_b3nTXcWcj9pEYjb9iChR31sg"
+      }
+    },
+    "gitmcp": {
+      "url": "https://gitmcp.io/{owner}/{repo}"
+    },
+    "taskmaster-ai": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package=task-master-ai",
+        "task-master-ai"
+      ],
+      "env": {
+        "ANTHROPIC_API_KEY": "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",
+        "PERPLEXITY_API_KEY": "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",
+        "OPENAI_API_KEY": "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",
+        "GOOGLE_API_KEY": "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",
+        "MISTRAL_API_KEY": "YOUR_MISTRAL_KEY_HERE",
+        "OPENROUTER_API_KEY": "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",
+        "XAI_API_KEY": "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",
+        "AZURE_OPENAI_API_KEY": "YOUR_AZURE_KEY_HERE",
+        "OLLAMA_API_KEY": "YOUR_OLLAMA_API_KEY_HERE",
+        "TASKMASTER_MAIN_MODEL": "anthropic/claude-3.5-sonnet",
+        "TASKMASTER_MODEL_PROVIDER": "openrouter"
+      }
+    }
+  }
 }
